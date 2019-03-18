@@ -3,6 +3,7 @@ import java.util.HashMap;
 
 class Permutation {
 
+	// Finding whether s2 is a permutation of s1.
 	public static void main(String[] s) {
 		//String s1 = "Hello";
 		//String s2 = "leloH";
@@ -17,6 +18,8 @@ class Permutation {
 			System.exit(1);
 		}
 		// At this point, we know length is same.
+		// Since we are collecting the count of characters in the map, there will be a finite number of records in the map
+		// for a-z A-Z 0-9 and other special chars.
 		Map<Character, Integer> m1 = new HashMap<Character, Integer>();
 		Map<Character, Integer> m2 = new HashMap<Character, Integer>();
 		for (int i=0;i<s1a.length; i++) {

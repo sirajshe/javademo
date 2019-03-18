@@ -19,8 +19,8 @@ public class ListMapSet {
 		myList.add("Eight");
 		myList.add("Nine");
 		myList.add("Ten");
+		myList.add("Ten");
 		System.out.println("*** ArrayList ***");
-		Iterator<String> myIter = myList.iterator();
 		for (String temp : myList)
 			System.out.println(temp);
 
@@ -35,9 +35,9 @@ public class ListMapSet {
 		myhSet.add("Eight");
 		myhSet.add("Nine");
 		myhSet.add("Ten");
+		myhSet.add("Ten");
 		
 		System.out.println("*** HashSet ***");
-		myIter = myhSet.iterator();
 		for (String temp : myhSet)
 			System.out.println(temp);
 		
@@ -54,8 +54,12 @@ public class ListMapSet {
 		myLhset.add("Ten");
 		
 		System.out.println("*** LinkedHashSet ***");
-		myIter = myLhset.iterator();
 		for (String temp : myLhset)
 			System.out.println(temp);
+		
+		Iterator<String> myIter = myLhset.iterator();
+		System.out.println("*** LinkedHashSet - print using iterator***");
+		while (myIter.hasNext())
+			System.out.println(myIter.next());
 	}
 } 

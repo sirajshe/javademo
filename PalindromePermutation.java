@@ -1,5 +1,6 @@
 import java.util.HashMap;
-
+// This is to check if there exists any permutation of the characters in the given string which 
+// is also a palindrome.
 class PalindromePermutation {
 	public static void main(String[] s) {
 		HashMap<Character, Integer> m = new HashMap<Character, Integer>();

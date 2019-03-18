@@ -9,20 +9,22 @@ public class ArrayRotate {
 		for (int i=0; i<d ; i++)
 			temp[i] = arr[i];
 		for (int i=0;i<temp.length;i++)
-			System.out.println(temp[i]);					
+			System.out.print(temp[i]);					
 		int j=0;
 		for (j=0; j<n-d; j++) 
 			arr[j] = arr[j+d];
 
 		for (int i=0;i<j;i++)
-			System.out.println(arr[i]);					
+			System.out.print(arr[i]);					
 
+		System.out.println("");	
 		System.out.println("j="+j);	
 		for (int k=0; k<temp.length ; k++)
 			arr[j+k]=temp[k];
 
 		for (int i=0;i<n;i++)
-			System.out.println(arr[i]);					
+			System.out.print(arr[i]);					
+		System.out.println("");	
 			
 	}
 }

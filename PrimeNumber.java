@@ -1,6 +1,6 @@
 public class PrimeNumber{
 	public static void main(String [] s) {
-		for (int i=2; i < 20 ; i++) {
+		for (int i=2; i < 100 ; i++) {
 					//System.out.println(i);
 			for (int j=2; j<=i; j++) {
 					//System.out.println(j);
